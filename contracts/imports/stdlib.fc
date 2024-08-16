@@ -1,0 +1,16 @@
+;; Стандартные функции для работы с ячейками и срезами
+slice get_sender();
+int get_balance();
+int send_raw_message(cell message, int mode);
+
+;; Начало и конец создания ячейки
+cell begin_cell();
+builder store_uint(builder b, int value, int bits);
+builder store_slice(builder b, slice s);
+builder store_coins(builder b, int amount);
+cell end_cell(builder b);
+
+;; Дополнительные утилиты
+slice load_msg_addr(slice s);
+int load_uint(slice s, int bits);
+int load_coins(slice s);

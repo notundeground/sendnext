@@ -1,0 +1,4 @@
+const int op_ft_transfer = 0x18;  
+const int op_update_data = 0x01;  
+const int op_update_code = 0x02;  
+const int op_topup = 0x03;        
